@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { profile } from "@/content/profile";
+import { MobileNav } from "./MobileNav";
 import { ThemeToggle } from "./ThemeToggle";
 
 const nav = [
@@ -7,6 +8,7 @@ const nav = [
   { href: "/#experience", label: "Experience", index: "02" },
   { href: "/#projects", label: "Projects", index: "03" },
   { href: "/#freelance", label: "Freelance", index: "04" },
+  { href: "/#contact", label: "Contact", index: "05" },
 ];
 
 export function Header() {
@@ -33,13 +35,8 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <a
-            href={`mailto:${profile.email}`}
-            className="rounded-card px-3 py-2 text-sm text-muted transition-colors duration-300 hover:text-accent"
-          >
-            Contact
-          </a>
           <ThemeToggle />
+          <MobileNav items={nav} />
         </nav>
       </div>
     </header>

@@ -230,7 +230,9 @@ function Hero() {
             </Reveal>
           </div>
 
-          <Reveal delay={320} className="md:col-span-5">
+          {/* Hidden on phones: the About section already shows the portrait,
+              and here it would push the CTAs below the fold. */}
+          <Reveal delay={320} className="hidden md:col-span-5 md:block">
             <figure className="relative mx-auto w-full max-w-[260px] md:ml-auto md:mr-0 md:max-w-[340px]">
               {/* Soft accent bloom behind the portrait so it sits in the page
                   rather than on top of it. */}

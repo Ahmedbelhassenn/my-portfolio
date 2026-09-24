@@ -53,7 +53,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                   onClick={() => setOpen(false)}
                   className="group flex items-center gap-3 py-4 text-base text-muted transition-colors duration-300 hover:text-fg"
                 >
-                  <span className="font-mono text-[11px] text-line transition-colors duration-300 group-hover:text-accent">
+                  <span className="font-mono text-[11px] text-accent">
                     {item.index}
                   </span>
                   {item.label}

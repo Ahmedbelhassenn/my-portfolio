@@ -27,7 +27,7 @@ export function Header() {
                   href={item.href}
                   className="group flex items-center gap-1.5 rounded-card px-3 py-2 text-sm text-muted transition-colors duration-300 hover:text-fg"
                 >
-                  <span className="font-mono text-[10px] text-line transition-colors duration-300 group-hover:text-accent">
+                  <span className="font-mono text-[10px] text-accent">
                     {item.index}
                   </span>
                   {item.label}

@@ -146,12 +146,16 @@ export default function Home() {
       </Section>
 
       <Section
-        id="projects"
+        id="freelance"
         index="03"
-        eyebrow="Projects"
-        title="Things I've built."
+        eyebrow="Freelance"
+        title="Client work, delivered independently."
         tone="raised"
       >
+        <ClientList items={clientEntries} />
+      </Section>
+
+      <Section id="projects" index="04" eyebrow="Projects" title="Things I've built.">
         <ul className="grid gap-5 sm:grid-cols-2">
           {projectCards.map((item, i) => (
             <Reveal as="li" key={item.title} delay={i * 60} className="h-full">
@@ -159,15 +163,6 @@ export default function Home() {
             </Reveal>
           ))}
         </ul>
-      </Section>
-
-      <Section
-        id="freelance"
-        index="04"
-        eyebrow="Freelance"
-        title="Client work, delivered independently."
-      >
-        <ClientList items={clientEntries} />
       </Section>
 
       <Contact />
